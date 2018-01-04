@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import Card from '../Card/Card';
 import Loading from '../../components/Loading/Loading';
 
-class CardContainer extends Component {
+export class CardContainer extends Component {
   constructor() {
     super();
   }
@@ -61,7 +61,7 @@ class CardContainer extends Component {
   }
 }
 
-const mapStateToProps = store => ({
+export const mapStateToProps = store => ({
   houses: store.houses
 })
 

@@ -1,0 +1,321 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`card tests should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2 />,
+        <h3>
+          Founded: 
+          unknown
+</h3>,
+        <h3>
+          Seats: 
+</h3>,
+        <h3>
+          Titles: 
+</h3>,
+        <h3>
+          Coat of Arms: 
+</h3>,
+        <h3>
+          Ancestral Weapons: 
+</h3>,
+        <h3>
+          Words: 
+          unknown
+</h3>,
+      ],
+      "className": "card-component",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Founded: ",
+            "unknown",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Founded: ",
+          "unknown",
+        ],
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Seats: ",
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Seats: ",
+          undefined,
+        ],
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Titles: ",
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Titles: ",
+          undefined,
+        ],
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Coat of Arms: ",
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Coat of Arms: ",
+          undefined,
+        ],
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Ancestral Weapons: ",
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Ancestral Weapons: ",
+          undefined,
+        ],
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Words: ",
+            "unknown",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Words: ",
+          "unknown",
+        ],
+        "type": "h3",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2 />,
+          <h3>
+            Founded: 
+            unknown
+</h3>,
+          <h3>
+            Seats: 
+</h3>,
+          <h3>
+            Titles: 
+</h3>,
+          <h3>
+            Coat of Arms: 
+</h3>,
+          <h3>
+            Ancestral Weapons: 
+</h3>,
+          <h3>
+            Words: 
+            unknown
+</h3>,
+        ],
+        "className": "card-component",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Founded: ",
+              "unknown",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Founded: ",
+            "unknown",
+          ],
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Seats: ",
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Seats: ",
+            undefined,
+          ],
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Titles: ",
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Titles: ",
+            undefined,
+          ],
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Coat of Arms: ",
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Coat of Arms: ",
+            undefined,
+          ],
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Ancestral Weapons: ",
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Ancestral Weapons: ",
+            undefined,
+          ],
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Words: ",
+              "unknown",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Words: ",
+            "unknown",
+          ],
+          "type": "h3",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
