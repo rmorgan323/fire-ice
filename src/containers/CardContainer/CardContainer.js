@@ -38,6 +38,8 @@ export class CardContainer extends Component {
         coatOfArms={data.coatOfArms}
         ancestralWeapons={data.ancestralWeapons}
         words={data.words}
+        swornMembers={data.swornMembers}
+
         key={index}
       />;
     })
