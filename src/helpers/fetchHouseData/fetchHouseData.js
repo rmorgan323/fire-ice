@@ -28,7 +28,11 @@ const getSwornMember = async (memberURL) => {
   console.log(memberURL)
   const member = await fetch('http://localhost:3001/api/v1/character', {
     method: 'POST',
-    body: `{ url: ${memberURL} }`
+    headers: {
+      'CONTENT-TYPE': 'application/json'
+    },
+    // body: `{ url: ${JSON.stringify(memberURL)} }`
+    body: JSON.stringify(`{ url: '${memberURL}' }`)
   })
   console.log('member', member)
 }
