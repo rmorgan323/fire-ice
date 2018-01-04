@@ -1,23 +1,17 @@
 const fetchHouseData = async () => {
-  const fetchApi = await fetch('http://localhost:3001/api/v1/houses', {
-  })
+  const fetchApi = await fetch('http://localhost:3001/api/v1/houses')
   const jsonResponse = await fetchApi.json();
-
-  const swornMembers = jsonResponse.map( async (character) => {
-    const obj = await character.swornMembers.reduce( async (accum, swornMember) => {
-      const memberObj = await getSwornMember(swornMember);
-      await accum.push(memberObj)
-      console.log(accum)
-      return accum;
-    }, [])
-    console.log(obj)
-
-    return obj;
+  const swornMembers = await jsonResponse.map( async (character) => {
+    const obj = await character.swornMembers.map( async (swornMember) => {
+      const member = await getSwornMember(swornMember);
+      return member;
+    })
+    const promises = await Promise.all(obj);
+    return promises;
   })
 
-  console.log(swornMembers)
 
-  return jsonResponse;
+  
 }
 
 const getSwornMember = async (memberURL) => {
