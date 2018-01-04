@@ -1,1 +1,11 @@
+import fetchHouseData from '../helpers/fetchHouseData/fetchHouseData';
+
 export const fakeAction = () => ({type: 'FAKE'});
+
+export const getHouseData = () => async dispatch => {
+  const houseData = await fetchHouseData();
+
+  dispatch(addHouseData(houseData));
+}
+
+export const 
