@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import PropTypes, { shape, func, string } from 'prop-types';
 import './CardContainer.css';
 import { connect } from 'react-redux';
+import Card from '../Card/Card';
 
 class CardContainer extends Component {
   constructor() {
     super();
   }
 
-  displayCards = () => {
+  getCleanCardData = () => {
     const houses = this.props.houses.reduce((houseArray, house) => {
       houseArray.push({
         name: house.name,
@@ -22,7 +23,27 @@ class CardContainer extends Component {
 
       return houseArray;
     }, [])
-    console.log(houses);
+    return houses
+  }
+
+  displayCards = () => {
+    const houseData = this.getCleanCardData();
+    console.log(houseData)
+
+    const display = houseData.map((data, index) => {
+      return <Card 
+        name={data.name}
+        founded={data.founded}
+        seats={data.seats}
+        titles={data.titles}
+        coatOfArms={data.coatOfArms}
+        ancestralWeapons={data.ancestralWeapons}
+        words={data.words}
+        key={index}
+      />;
+    })
+
+    return display;
   }
 
   render() {
