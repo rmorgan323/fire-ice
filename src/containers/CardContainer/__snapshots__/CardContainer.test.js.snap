@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`card container tests should match the snapshot when houses are in props 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CardContainer
+    houses={
+        Array [
+            Object {
+              "ancestralWeapons": Array [
+                "Vigilance",
+              ],
+              "coatOfArms": "Cendrée, a tower argent with a beacon on fire gules",
+              "founded": "Age of Dawn",
+              "name": "House Hightower of the Hightower",
+              "seats": Array [
+                "The Hightower, Oldtown",
+              ],
+              "titles": Array [
+                "Lord of the Hightower",
+                "Lord of the Port",
+                "Voice of Oldtown",
+                "Defender of the Citadel",
+                "Beacon of the South",
+                "King of the High Tower (formerly)",
+              ],
+              "words": "We Light the Way",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        Array [
+          <Card
+            ancestralWeapons="Vigilance"
+            coatOfArms="Cendrée, a tower argent with a beacon on fire gules"
+            founded="Age of Dawn"
+            name="House Hightower of the Hightower"
+            seats="The Hightower, Oldtown"
+            titles="Lord of the Hightower, Lord of the Port, Voice of Oldtown, Defender of the Citadel, Beacon of the South, King of the High Tower (formerly)"
+            words="We Light the Way"
+/>,
+        ],
+        undefined,
+      ],
+      "className": "card-container-component",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "function",
+        "props": Object {
+          "ancestralWeapons": "Vigilance",
+          "coatOfArms": "Cendrée, a tower argent with a beacon on fire gules",
+          "founded": "Age of Dawn",
+          "name": "House Hightower of the Hightower",
+          "seats": "The Hightower, Oldtown",
+          "titles": "Lord of the Hightower, Lord of the Port, Voice of Oldtown, Defender of the Citadel, Beacon of the South, King of the High Tower (formerly)",
+          "words": "We Light the Way",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      undefined,
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          Array [
+            <Card
+              ancestralWeapons="Vigilance"
+              coatOfArms="Cendrée, a tower argent with a beacon on fire gules"
+              founded="Age of Dawn"
+              name="House Hightower of the Hightower"
+              seats="The Hightower, Oldtown"
+              titles="Lord of the Hightower, Lord of the Port, Voice of Oldtown, Defender of the Citadel, Beacon of the South, King of the High Tower (formerly)"
+              words="We Light the Way"
+/>,
+          ],
+          undefined,
+        ],
+        "className": "card-container-component",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "function",
+          "props": Object {
+            "ancestralWeapons": "Vigilance",
+            "coatOfArms": "Cendrée, a tower argent with a beacon on fire gules",
+            "founded": "Age of Dawn",
+            "name": "House Hightower of the Hightower",
+            "seats": "The Hightower, Oldtown",
+            "titles": "Lord of the Hightower, Lord of the Port, Voice of Oldtown, Defender of the Citadel, Beacon of the South, King of the High Tower (formerly)",
+            "words": "We Light the Way",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        undefined,
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`card container tests should match the snapshot when no houses are in props 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CardContainer
+    houses={Array []}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        Array [],
+        <Loading />,
+      ],
+      "className": "card-container-component",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          Array [],
+          <Loading />,
+        ],
+        "className": "card-container-component",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
