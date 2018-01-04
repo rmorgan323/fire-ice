@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import PropTypes, { shape, func, string } from 'prop-types';
+import React from 'react';
+import PropTypes from 'prop-types';
 import './Card.css';
 
 const Card = ({ name, founded, seats, titles, coatOfArms, ancestralWeapons, words }) => {
@@ -18,3 +18,13 @@ const Card = ({ name, founded, seats, titles, coatOfArms, ancestralWeapons, word
 }
 
 export default Card;
+
+Card.propTypes = {
+  name: PropTypes.string,
+  founded: PropTypes.string,
+  seats: PropTypes.string,
+  titles: PropTypes.string,
+  coatOfArms: PropTypes.string,
+  ancestralWeapons: PropTypes.string,
+  words: PropTypes.string
+}
