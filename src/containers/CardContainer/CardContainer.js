@@ -3,6 +3,7 @@ import PropTypes, { shape, func, string } from 'prop-types';
 import './CardContainer.css';
 import { connect } from 'react-redux';
 import Card from '../Card/Card';
+import Loading from '../../components/Loading/Loading';
 
 class CardContainer extends Component {
   constructor() {
@@ -28,8 +29,6 @@ class CardContainer extends Component {
 
   displayCards = () => {
     const houseData = this.getCleanCardData();
-    console.log(houseData)
-
     const display = houseData.map((data, index) => {
       return <Card 
         name={data.name}
@@ -46,10 +45,17 @@ class CardContainer extends Component {
     return display;
   }
 
+  displayLoading = () => {
+    if (!this.props.houses.length) {
+      return <Loading />
+    }
+  }
+
   render() {
     return (
-      <div>
+      <div className="card-container-component">
         {this.displayCards()}
+        {this.displayLoading()}
       </div>
     )
   }
