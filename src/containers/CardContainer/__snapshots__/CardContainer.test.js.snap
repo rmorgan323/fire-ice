@@ -50,6 +50,7 @@ ShallowWrapper {
             founded="Age of Dawn"
             name="House Hightower of the Hightower"
             seats="The Hightower, Oldtown"
+            swornMembers={undefined}
             titles="Lord of the Hightower, Lord of the Port, Voice of Oldtown, Defender of the Citadel, Beacon of the South, King of the High Tower (formerly)"
             words="We Light the Way"
 />,
@@ -70,6 +71,7 @@ ShallowWrapper {
           "founded": "Age of Dawn",
           "name": "House Hightower of the Hightower",
           "seats": "The Hightower, Oldtown",
+          "swornMembers": undefined,
           "titles": "Lord of the Hightower, Lord of the Port, Voice of Oldtown, Defender of the Citadel, Beacon of the South, King of the High Tower (formerly)",
           "words": "We Light the Way",
         },
@@ -95,6 +97,7 @@ ShallowWrapper {
               founded="Age of Dawn"
               name="House Hightower of the Hightower"
               seats="The Hightower, Oldtown"
+              swornMembers={undefined}
               titles="Lord of the Hightower, Lord of the Port, Voice of Oldtown, Defender of the Citadel, Beacon of the South, King of the High Tower (formerly)"
               words="We Light the Way"
 />,
@@ -115,6 +118,7 @@ ShallowWrapper {
             "founded": "Age of Dawn",
             "name": "House Hightower of the Hightower",
             "seats": "The Hightower, Oldtown",
+            "swornMembers": undefined,
             "titles": "Lord of the Hightower, Lord of the Port, Voice of Oldtown, Defender of the Citadel, Beacon of the South, King of the High Tower (formerly)",
             "words": "We Light the Way",
           },

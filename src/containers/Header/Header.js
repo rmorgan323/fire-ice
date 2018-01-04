@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
-import PropTypes, { shape, func, string } from 'prop-types';
 import './Header.css';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 import logo from './logo.svg';
 
 class Header extends Component {
-  constructor() {
-    super();
-  }
 
   componentDidMount = () => {
     this.props.getHouseData();
@@ -26,10 +22,6 @@ class Header extends Component {
   }
 }
 
-const mapStateToProps = store => {
-
-}
-
 const mapDispatchToProps = dispatch => {
   return {
     getHouseData: getHouseData => {
@@ -38,4 +30,4 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header);
+export default connect(null, mapDispatchToProps)(Header);

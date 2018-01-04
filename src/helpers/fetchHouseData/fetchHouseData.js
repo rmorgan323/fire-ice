@@ -1,17 +1,27 @@
 const fetchHouseData = async () => {
   const fetchApi = await fetch('http://localhost:3001/api/v1/houses')
-  const jsonResponse = await fetchApi.json();
-  const swornMembers = await jsonResponse.map( async (character) => {
+  let jsonResponse = await fetchApi.json();
+  const characters = await jsonResponse.map( async (character) => {
     const obj = await character.swornMembers.map( async (swornMember) => {
       const member = await getSwornMember(swornMember);
       return member;
     })
     const promises = await Promise.all(obj);
-    return promises;
+    const newCard = {
+      name: character.name,
+      founded: character.founded,
+      seats: character.seats,
+      titles: character.titles,
+      coatOfArms: character.coatOfArms,
+      ancestralWeapons: character.ancestralWeapons,
+      words: character.words,
+      swornMembers: promises
+    }
+    return newCard;
   })
+  const characterPromises = await Promise.all(characters)
 
-
-  
+  return characterPromises;
 }
 
 const getSwornMember = async (memberURL) => {
@@ -25,7 +35,6 @@ const getSwornMember = async (memberURL) => {
   const json = await member.json();
   return json;
 }
-
 
 export default fetchHouseData;
 

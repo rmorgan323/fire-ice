@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
-import PropTypes, { shape, func, string } from 'prop-types';
+import PropTypes from 'prop-types';
 import './CardContainer.css';
 import { connect } from 'react-redux';
 import Card from '../Card/Card';
 import Loading from '../../components/Loading/Loading';
 
 export class CardContainer extends Component {
-  constructor() {
-    super();
-  }
 
   getCleanCardData = () => {
     const houses = this.props.houses.reduce((houseArray, house) => {
@@ -68,3 +65,9 @@ export const mapStateToProps = store => ({
 })
 
 export default connect(mapStateToProps, null)(CardContainer);
+
+CardContainer.propTypes = {
+  houses: PropTypes.array
+}
+
+
