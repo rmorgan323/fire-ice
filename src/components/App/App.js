@@ -5,6 +5,7 @@ import './App.css';
 import { connect } from 'react-redux';
 import { fakeAction } from '../../actions';
 import Header from '../../containers/Header/Header';
+import CardContainer from '../../containers/CardContainer/CardContainer';
 
 class App extends Component {
 
@@ -19,6 +20,7 @@ class App extends Component {
             this.props.fakeAction();
             alert(this.props.fake);
           }}> FAKE ACTION</button>
+        <CardContainer />
         </div>
         <div className='Display-info'>
         </div>
