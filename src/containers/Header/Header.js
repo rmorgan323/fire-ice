@@ -3,6 +3,7 @@ import PropTypes, { shape, func, string } from 'prop-types';
 import './Header.css';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
+import logo from './logo.svg';
 
 class Header extends Component {
   constructor() {
@@ -13,12 +14,13 @@ class Header extends Component {
     this.props.getHouseData();
   }
 
-
-
   render() {
     return (
       <div>
-        HEADER
+        <div className='App-header'>
+          <img src={logo} className='App-logo' alt='logo' />
+          <h2>Welcome to Westeros</h2>
+        </div>
       </div>
     ) 
   }

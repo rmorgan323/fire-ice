@@ -1,0 +1,18 @@
+.card-container-component {
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+  margin: auto;
+}
+
+@media screen and (max-width: 959px) {
+  .card-container-component {
+    width: 640px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .card-container-component {
+    width: 320px;
+  }
+}

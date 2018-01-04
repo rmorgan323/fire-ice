@@ -1,0 +1,12 @@
+.card-component {
+  width: 300px;
+  margin: 10px;
+}
+
+.card-component h2 {
+  text-align: center;
+}
+
+.card-component h3 {
+  text-align: left;
+}
