@@ -4,11 +4,12 @@ import './CardContainer.css';
 import { connect } from 'react-redux';
 import Card from '../Card/Card';
 import Loading from '../../components/Loading/Loading';
+import { branch, renderComponent } from 'recompose';
 
-export class CardContainer extends Component {
+const CardContainer = (props) => {
 
-  getCleanCardData = () => {
-    const houses = this.props.houses.reduce((houseArray, house) => {
+  const getCleanCardData = () => {
+    const houses = props.houses.reduce((houseArray, house) => {
       houseArray.push({
         name: house.name,
         founded: house.founded,
@@ -24,8 +25,8 @@ export class CardContainer extends Component {
     return houses
   }
 
-  displayCards = () => {
-    const houseData = this.getCleanCardData();
+  const displayCards = () => {
+    const houseData = getCleanCardData();
     const display = houseData.map((data, index) => {
       return <Card 
         name={data.name}
@@ -44,27 +45,23 @@ export class CardContainer extends Component {
     return display;
   }
 
-  displayLoading = () => {
-    if (!this.props.houses.length) {
-      return <Loading />
-    }
-  }
-
-  render() {
-    return (
-      <div className="card-container-component">
-        {this.displayCards()}
-        {this.displayLoading()}
-      </div>
-    )
-  }
+  return (
+    <div className="card-container-component">
+      {displayCards()}
+    </div>
+  )
 }
 
 export const mapStateToProps = store => ({
   houses: store.houses
 })
 
-export default connect(mapStateToProps, null)(CardContainer);
+const wrappedCardContainer = branch(
+  props => !props.houses.length,
+  renderComponent(Loading)
+)(CardContainer)
+
+export default connect(mapStateToProps, null)(wrappedCardContainer);
 
 CardContainer.propTypes = {
   houses: PropTypes.array
