@@ -3,23 +3,18 @@ import './Header.css';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 import logo from './logo.svg';
+import { lifecycle } from 'recompose';
 
-class Header extends Component {
+const Header = () => {
 
-  componentDidMount = () => {
-    this.props.getHouseData();
-  }
-
-  render() {
-    return (
-      <div>
-        <div className='App-header'>
-          <img src={logo} className='App-logo' alt='logo' />
-          <h2>Welcome to Westeros</h2>
-        </div>
+  return (
+    <div>
+      <div className='App-header'>
+        <img src={logo} className='App-logo' alt='logo' />
+        <h2>Welcome to Westeros</h2>
       </div>
-    ) 
-  }
+    </div>
+  ) 
 }
 
 const mapDispatchToProps = dispatch => {
@@ -30,4 +25,10 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-export default connect(null, mapDispatchToProps)(Header);
+const wrappedHeader = lifecycle({
+  componentDidMount() {
+    this.props.getHouseData();
+  }
+})(Header)
+
+export default connect(null, mapDispatchToProps)(wrappedHeader);
